@@ -1,4 +1,5 @@
-import { FaDove, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { Logo } from './Logo';
 import { NavbarItem } from './NavbarItem';
 
 interface NavbarProps {
@@ -11,10 +12,7 @@ export function Navbar({title}: NavbarProps) {
       <nav className="max-w-7xl w-full mx-auto px-6 py-4 flex items-center justify-between">
 
         <div className='flex items-center gap-2'>
-          <div className="flex items-center gap-2">
-            <FaDove className="text-red-600 text-lg" />
-            <span className="font-semibold text-xl text-zinc-50">Pigeon</span>
-          </div>
+          <Logo />
 
           {title && (
             <div className='flex items-center gap-2'>
@@ -25,7 +23,7 @@ export function Navbar({title}: NavbarProps) {
 
         </div>
 
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-sm ">
           <NavbarItem href='#' isExternal>Home</NavbarItem>
           <NavbarItem href='#' isExternal>Home</NavbarItem>
           <NavbarItem href='#' isExternal>Home</NavbarItem>

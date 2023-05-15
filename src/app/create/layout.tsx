@@ -6,6 +6,10 @@ interface CreateLayoutProps {
   children: ReactNode;
 };
 
+export const metadata = {
+  title: 'Pigeon | Create',
+}
+
 export default function CreateLayout({children}: CreateLayoutProps) {
   return (
     <main className="w-full flex flex-col gap-8">
